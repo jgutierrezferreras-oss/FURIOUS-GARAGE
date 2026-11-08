@@ -301,32 +301,43 @@ document.addEventListener("DOMContentLoaded", () => {
         ].filter(Boolean);
     }
 
+    // Carga las imágenes desde la carpeta IMG publicada.
+    // Conserva exactamente las mayúsculas y minúsculas.
+    // Mantiene el respaldo original cuando una imagen falla.
+
     function cargarImagenLocal(elemento, auto) {
         const rutas = rutasImagen(auto);
+        const base = new URL(
+            "/FURIOUS-GARAGE/",
+            window.location.origin
+        );
+
         let indice = 0;
 
         function intentarSiguiente() {
             if (indice >= rutas.length) {
                 elemento.onerror = null;
+                elemento.onload = null;
                 elemento.src = imagenRespaldo(auto);
 
-                console.warn(
-                    `No se encontró la imagen de ${auto.modelo}.`,
+                console.error(
+                    `No se pudo cargar la imagen de ${auto.modelo}.`,
                     rutas
                 );
                 return;
             }
 
             const ruta = rutas[indice++];
+            const url = new URL(ruta, base).href;
 
             elemento.onerror = intentarSiguiente;
 
             elemento.onload = () => {
                 elemento.onerror = null;
-                auto.imagen = ruta;
+                auto.imagen = url;
             };
 
-            elemento.src = ruta;
+            elemento.src = url;
         }
 
         intentarSiguiente();
