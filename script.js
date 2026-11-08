@@ -1,4 +1,3 @@
-
 document.addEventListener("DOMContentLoaded", () => {
 
     // ============================================
@@ -35,7 +34,7 @@ document.addEventListener("DOMContentLoaded", () => {
             motor: "RB26DETT 2.6L Twin Turbo",
             potencia: "Preparación personalizada",
             precio: 165000,
-            imagenLocal: "IMG/NISSAN.jpg",
+            imagenLocal: "IMG/NISSAN.JPG",
             descripcion: "El Skyline plateado con detalles azules se convirtió en uno de los símbolos de Brian."
         },
         {
@@ -61,7 +60,7 @@ document.addEventListener("DOMContentLoaded", () => {
             motor: "Rotativo 13B",
             potencia: "Preparación personalizada",
             precio: 145000,
-            imagenLocal: "IMG/RX7.WEBP",
+            imagenLocal: "IMG/RX7.webp",
             descripcion: "El RX-7 naranja y negro de Han es uno de los autos más famosos de Tokyo Drift."
         },
         {
@@ -100,7 +99,7 @@ document.addEventListener("DOMContentLoaded", () => {
             motor: "4G63 2.0L Turbo",
             potencia: "Preparación personalizada",
             precio: 60000,
-            imagenLocal: "IMG/LANCER.AVIF",
+            imagenLocal: "IMG/LANCER.avif",
             descripcion: "El Evolution VII amarillo de Brian participa en las misiones de la segunda película."
         },
         {
@@ -113,7 +112,7 @@ document.addEventListener("DOMContentLoaded", () => {
             motor: "V6 3.5L",
             potencia: "Preparación personalizada",
             precio: 48000,
-            imagenLocal: "IMG/350Z.WEBP",
+            imagenLocal: "IMG/350Z.webp",
             descripcion: "El Nissan 350Z de DK es uno de los vehículos centrales de las carreras de drift."
         },
         {
@@ -126,7 +125,7 @@ document.addEventListener("DOMContentLoaded", () => {
             motor: "SR20DET Turbo",
             potencia: "Preparación personalizada",
             precio: 65000,
-            imagenLocal: "IMG/SILVIA.WEBP",
+            imagenLocal: "IMG/SILVIA.webp",
             descripcion: "Conocido como Mona Lisa, el Silvia S15 aparece al inicio del aprendizaje de Sean."
         },
         {
@@ -152,7 +151,7 @@ document.addEventListener("DOMContentLoaded", () => {
             motor: "Preparación deportiva",
             potencia: "Personalizada",
             precio: 35000,
-            imagenLocal: "IMG/JETTA.WEBP",
+            imagenLocal: "IMG/JETTA.webp",
             descripcion: "El Jetta blanco de Jesse es recordado por su estética tuning."
         },
         {
@@ -204,7 +203,7 @@ document.addEventListener("DOMContentLoaded", () => {
             motor: "Motor preparado",
             potencia: "Personalizada",
             precio: 95000,
-            imagenLocal: "IMG/ESCORT.AVIF",
+            imagenLocal: "IMG/ESCORT.avif",
             descripcion: "El Escort clásico de Brian aparece en la sexta entrega de la saga."
         }
     ];
